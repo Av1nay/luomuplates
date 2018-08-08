@@ -88,15 +88,15 @@ header{
 /*----------NAVIGATION BAR---------*/
 .navigation-bar{
 	float: right;
-	width: 50%;
+	width: 70%;
 }
 nav ul{
 	list-style: none;
-	float: left;
+	float: right;
 }
 nav ul li{
 	display: inline-block;
-	margin: 0 10px 0;
+	margin: 0 20px 0;
 }
 nav ul li a{
 	color: #000000;
