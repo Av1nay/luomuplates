@@ -117,9 +117,9 @@ nav ul li a:active, .active{
 	font-size:150%;
 	display: block;
 	margin-bottom: -2px;
-	border-bottom: 2px solid #27ad8a;
-	box-shadow: 0 3px 5px -5px #27ad8a;
-	-webkit-box-shadow:0 3px 5px -5px #27ad8a;
+	border-bottom: 2px solid #2DBFB5;
+	box-shadow: 0 3px 5px -5px #2DBFB5;
+	-webkit-box-shadow:0 3px 5px -5px #2DBFB5;
 	width: 100%;
 }
 .search-box{
@@ -142,27 +142,64 @@ nav ul li a:active, .active{
 }
 .search-text-area:hover{
 	border: none;
-	box-shadow: 0px 5px 3px -6px #27ad8a;
+	box-shadow: 0px 5px 3px -6px #2DBFB5;
 	text-indent: 5%;
 	font-size: 1.3em;
 	margin-bottom: -2px;
-	border-bottom: 2px solid #27ad8a;
+	border-bottom: 2px solid #2DBFB5;
 }
 .search-button{
 	float: right;
-	margin-top: 10px;
+
+}
+.search-button-style{
+	border: 0;
+	background-color: #2DBFB5;
+	font-size: 1.1em;
+	margin-top: -5px;
+	padding: 7px;
+}
+.search-button-style:hover, .search-button-style:focus{
+	border: 0;
+	background-color: #2DBFB5;
+	box-shadow: 1px 1px 10px #2DBFB5;
+	font-size: 1.1em;
+	margin-top: -5px;
+	padding: 7px;
+	outline: none;
+	cursor: pointer;
 }
 
 /*---------NAVIGATION BAR ENDS-------*/
 /*---------CAROUSEL-------------*/
-.carousel{
+
+.carousel , .slide , .slider{
+	position: relative;
 	width: 100%;
-	height: 80vh;
-	background: #123456;
+	height:	90vh;
+	overflow: hidden;
+	background-repeat: no-repeat;
 }
-#slider, .slide, .slider-content{
-	overflow-x: hidden;
+.slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
+.slide-1{background-image:url(images/silder-image-1.png)}
+.slide-2{background-image: url(images/silder-image-2.png)}
+.slide-3{background-image: url(images/silder-image-3.jpeg)}
+.slide-4{background-image: url(images/slider-image-4.jpeg)}
+.slide-5{background-image: url(images/slider-image-5.jpeg)}
+.slide-6{background-image: url(images/slider-image-6.jpeg)}
+.slider-content{
+	display: flex;
+	text-align: center;
+}
+.slider-content span{
+	vertical-align: middle;
+}
+
+
 /*---------CAROUSEL ENDS-------*/
 /*------------SECTION----------*/
 .main{
