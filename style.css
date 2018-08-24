@@ -186,19 +186,63 @@ nav ul li a:active, .active{
 	background-repeat: no-repeat;
 }
 .slide-1{background-image:url(images/silder-image-1.png)}
-.slide-2{background-image: url(images/silder-image-2.png)}
+.slide-2{background-image: url(images/slider-image-2.png)}
 .slide-3{background-image: url(images/silder-image-3.jpeg)}
 .slide-4{background-image: url(images/slider-image-4.jpeg)}
 .slide-5{background-image: url(images/slider-image-5.jpeg)}
 .slide-6{background-image: url(images/slider-image-6.jpeg)}
 .slider-content{
 	display: flex;
-	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
 }
 .slider-content span{
-	vertical-align: middle;
+	color: #ffffff;
 }
-
+.arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+	z-index: 99999;
+	
+}
+#arrow-left{ 
+  	border-top: 35px solid transparent;
+  	border-bottom: 35px solid transparent; 
+	border-right: 35px solid #2DBFB5;
+	margin-left: 50px;
+	left: 0;
+}
+#arrow-left:hover{ 
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent; 
+  	border-right: 35px solid #2DBFB5;
+  	margin-left: 50px;
+	left: 0;
+	box-shadow: 11px 1px 8px -7px #2DBFB5; 
+	transition: 0.5s ease-in-out;
+}
+#arrow-right{ 
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent; 
+	border-left: 35px solid #2DBFB5;
+	margin-right: 50px;
+	right:0;
+}
+#arrow-right:hover{ 
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent; 
+	border-left: 35px solid #2DBFB5;
+	box-shadow: -11px 1px 8px -7px #2DBFB5;
+	transition: 0.5s ease-in-out;
+	margin-right: 50px;
+	right:0;
+}
 
 /*---------CAROUSEL ENDS-------*/
 /*------------SECTION----------*/
