@@ -140,13 +140,14 @@ nav ul li a:active, .active{
 	text-indent: 5%;
 	font-size: 1.3em;
 }
-.search-text-area:hover{
+.search-text-area:hover,.search-text-area:focus {
 	border: none;
 	box-shadow: 0px 5px 3px -6px #2DBFB5;
 	text-indent: 5%;
 	font-size: 1.3em;
 	margin-bottom: -2px;
 	border-bottom: 2px solid #2DBFB5;
+	transition: 0.1s;
 }
 .search-button{
 	float: right;
@@ -200,7 +201,14 @@ nav ul li a:active, .active{
 	
 }
 .slider-content span{
-	color: #ffffff;
+	background: #ECECEC;
+	opacity: 0.5;
+}
+span p{
+	font-size: 3em;
+	color: #000000;
+	text-align: center;
+
 }
 .arrow{
 	cursor: pointer;
@@ -211,14 +219,40 @@ nav ul li a:active, .active{
 	z-index: 99999;
 	
 }
-#arrow-left{ 
+/*#arrow-left{ 
   	border-top: 35px solid transparent;
   	border-bottom: 35px solid transparent; 
 	border-right: 35px solid #2DBFB5;
 	margin-left: 50px;
 	left: 0;
+}*/
+#arrow-left, #arrow-right,
+#arrow-left:hover, #arrow-right:hover{
+	width: 40px;
+	height: 40px;
+
 }
-#arrow-left:hover{ 
+#arrow-left, #arrow-left:hover{
+	left: 0;
+	margin-left: 5em;
+	transform: rotate(45deg);
+	box-shadow: -3px 3px 0 #2DBFB5;	
+}
+#arrow-left:hover{
+	box-shadow: -3px 3px 2px #2dbfb5;
+	transition: 0.2s;
+}
+#arrow-right, #arrow-right:hover{
+	right: 0;
+	margin-right: 5em;
+	transform: rotate(45deg);
+	box-shadow: 3px -3px 0 #2DBFB5;	
+}
+#arrow-right:hover{
+	box-shadow: 3px -3px 2px #2DBFB5;
+	transition: 0.2s;
+}
+/* #arrow-left:hover{ 
 	border-top: 35px solid transparent;
 	border-bottom: 35px solid transparent; 
   	border-right: 35px solid #2DBFB5;
@@ -226,23 +260,7 @@ nav ul li a:active, .active{
 	left: 0;
 	box-shadow: 11px 1px 8px -7px #2DBFB5; 
 	transition: 0.5s ease-in-out;
-}
-#arrow-right{ 
-	border-top: 35px solid transparent;
-	border-bottom: 35px solid transparent; 
-	border-left: 35px solid #2DBFB5;
-	margin-right: 50px;
-	right:0;
-}
-#arrow-right:hover{ 
-	border-top: 35px solid transparent;
-	border-bottom: 35px solid transparent; 
-	border-left: 35px solid #2DBFB5;
-	box-shadow: -11px 1px 8px -7px #2DBFB5;
-	transition: 0.5s ease-in-out;
-	margin-right: 50px;
-	right:0;
-}
+} */
 
 /*---------CAROUSEL ENDS-------*/
 /*------------SECTION----------*/
